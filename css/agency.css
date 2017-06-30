@@ -139,7 +139,7 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  background-color: #fed136;
+  background-color: black;
   border-color: #fed136;
 }
 .btn-xl .badge {
