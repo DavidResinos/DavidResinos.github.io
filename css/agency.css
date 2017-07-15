@@ -69,9 +69,7 @@ a:hover {
     margin: 0 auto
 }
 
-.bg-light-gray {
-    background-color: #eee
-}
+
 
 .bg-darkest-gray {
     background-color: #222
@@ -224,7 +222,7 @@ fieldset[disabled] .btn-xl:hover {
 
 @media (min-width:768px) {
     .navbar-custom {
-        background-color: transparent;
+        background-color: #222\;
         padding: 25px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
