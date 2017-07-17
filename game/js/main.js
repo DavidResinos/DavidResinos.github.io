@@ -331,6 +331,12 @@ PlayState._createHud = function () {
     this.hud.add(this.keyIcon);
     this.hud.position.set(10, 10);
 };
+myAudio = new Audio('audio/bgm.mp3'); 
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();
 
 // =============================================================================
 // entry point
