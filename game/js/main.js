@@ -337,7 +337,7 @@ myAudio.addEventListener('ended', function() {
     this.play();
 }, false);
 myAudio.play();
-audio.volume = 0.2;
+
 
 // =============================================================================
 // entry point
