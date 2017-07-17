@@ -332,7 +332,6 @@ PlayState._createHud = function () {
     this.hud.position.set(10, 10);
 };
 myAudio = new Audio('audio/bgm.mp3');
-audio.volume = 0.2;
 myAudio.addEventListener('ended', function() {
     this.currentTime = 0;
     this.play();
