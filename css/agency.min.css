@@ -585,22 +585,33 @@ footer ul.quicklinks {
 
 .team-member {
     text-align: center;
-    margin-bottom: 50px
+    margin-top: 4px;
+    margin-right: -697px;
+    margin-left: 85px;
 }
 
 .team-member img {
-    margin: 0 auto;
+    margin-top: 6px;
+    margin-right: 2px;
+    margin-left: 420px;
     border: 7px solid #fff
+    margin-left:2px;
 }
 
 .team-member h4 {
-    margin-top: 25px;
-    margin-bottom: 0;
+    text-align: center;
+    margin-top: 23px;
+    margin-bottom: 2px;
+    margin-left: 2px;
     text-transform: none
+     left: 2px;
+    top: 2px;
 }
 
 .team-member p {
     margin-top: 0
+     left: 2px;
+    top: 2px;
 }
 
 aside.clients img {
@@ -821,3 +832,4 @@ img::selection {
 img::-moz-selection {
     background: 0 0
 }
+
