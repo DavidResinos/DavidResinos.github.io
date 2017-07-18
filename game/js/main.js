@@ -25,7 +25,7 @@ Hero.prototype.move = function (direction) {
 };
 
 Hero.prototype.jump = function () {
-    const JUMP_SPEED = 1000;
+    const JUMP_SPEED = 200;
     let canJump = this.body.touching.down;
 
     if (canJump) {
@@ -36,7 +36,7 @@ Hero.prototype.jump = function () {
 };
 
 Hero.prototype.bounce = function () {
-    const BOUNCE_SPEED = 1000;
+    const BOUNCE_SPEED = 600;
     this.body.velocity.y = -BOUNCE_SPEED;
 };
 
