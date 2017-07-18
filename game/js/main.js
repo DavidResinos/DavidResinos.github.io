@@ -14,7 +14,7 @@ Hero.prototype = Object.create(Phaser.Sprite.prototype);
 Hero.prototype.constructor = Hero;
 
 Hero.prototype.move = function (direction) {
-    const SPEED = 1000;
+    const SPEED = 200;
     this.body.velocity.x = direction * SPEED;
     if (this.body.velocity.x < 0) {
         this.scale.x = -1;
@@ -25,7 +25,7 @@ Hero.prototype.move = function (direction) {
 };
 
 Hero.prototype.jump = function () {
-    const JUMP_SPEED = 200;
+    const JUMP_SPEED = 600;
     let canJump = this.body.touching.down;
 
     if (canJump) {
