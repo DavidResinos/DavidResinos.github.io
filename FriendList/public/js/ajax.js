@@ -3,36 +3,33 @@ var $name = $('#name');
 var $age = $('#age');
 
 var friendTemplate = "" +
-	"<li>" +
-	"<p><strong>Name:</strong> {{name}}</p>" +
-	"<p><strong>Age:</strong> {{age}}</p>"+
-	"<button id='{{id}}' class='remove'>X</button>" +
-	"</li>";
+		"<li>" +
+		"<p><strong>Name:</strong> {{name}}</p>" +
+		"<p><strong>Age:</strong> {{age}}</p>" +
+		"<button id='{{id}}' class='remove'>X</button>" +
+		"</li>";
 
 function addFriend(friend){
 	$friends.append(Mustache.render(friendTemplate, friend));
 };
 
-
-
 $(document).ready(function(){
-
-	alert("hey");
 
 	$.ajax({
 		type: 'GET',
-		url: 'http://rest.learncode.academy/api/david/friends/',
+		url: 'http://rest.learncode.academy/api/alexander/friends',
 		success: function(friends) {
 			$.each(friends, function(i, friend){
 				addFriend(friend);
 			});
 		},
+
 		error: function(){
-			alert("error loading friends")
+			alert('error loading friends');
 		}
 	});
 
-	$('#add-friend').on('click',function(){
+	$('#add-friend').on('click', function(){
 
 		var friend = {
 			name: $name.val(),
@@ -40,30 +37,29 @@ $(document).ready(function(){
 		};
 		$.ajax({
 			type: 'POST',
-			url: 'http://rest.learncode.academy/api/david/friends/',
-			data: friend,
+			url: 'http://rest.learncode.academy/api/alexander/friends',
+			data: friend, 
 			success: function(newFriend){
 				addFriend(newFriend);
 			},
 			error: function(){
-				alert("error saving order");
+				alert('error saving order');
 			}
 		});
 	});
 
-$friends.delegate(".remove","click", function(){
+	$friends.delegate('.remove', 'click', function(){
 
-	var $li = $(this).closest('li');
-
-	$.ajax({
-		type: 'DELETE',
-		url: 'http://rest.learncode.academy/api/david/friends/' + $(this).attr("id"),
-		success: function(){
-			$li.fadeOut(300, function(){
-				$(this).remove();
-			});
-		}
+		var $li = $(this).closest('li');
+		$.ajax({
+			type: 'DELETE', 
+			url: 'http://rest.learncode.academy/api/alexander/friends/' + $(this).attr('id'),
+			success: function(){
+				$li.fadeOut(300, function(){
+					$(this).remove();
+				});
+			}
+		});
 	});
-});
-});
 
+});
