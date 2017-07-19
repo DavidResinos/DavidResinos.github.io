@@ -62,7 +62,7 @@ a.active,
 a:active,
 a:focus,
 a:hover {
-    color: #fec503
+    color: lightblue
 }
 
 .img-centered {
@@ -79,8 +79,8 @@ a:hover {
 
 .btn-primary {
     color: #fff;
-    background-color: #fed136;
-    border-color: #fed136
+    background-color: lightblue;
+    border-color: lightblue
 }
 
 .btn-primary.active,
@@ -108,12 +108,12 @@ fieldset[disabled] .btn-primary.active,
 fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:hover {
-    background-color: #fed136;
-    border-color: #fed136
+    background-color: lightblue;
+    border-color: lightblue
 }
 
 .btn-primary .badge {
-    color: #fed136;
+    color: lightblue;
     background-color: #fff
 }
 
@@ -149,13 +149,6 @@ fieldset[disabled] .btn-xl.active,
 fieldset[disabled] .btn-xl:active,
 fieldset[disabled] .btn-xl:focus,
 fieldset[disabled] .btn-xl:hover {
-    background-color: #fed136;
-    border-color: #fed136
-}
-
-.btn-xl .badge {
-    color: #fed136;
-    background-color: #fff
 }
 
 .navbar-custom {
@@ -469,7 +462,7 @@ footer ul.quicklinks {
     height: 80px;
     position: absolute;
     z-index: 100;
-    background-color: #fed136;
+  
     color: #fff;
     border-radius: 100%;
     border: 7px solid #f1f1f1;
@@ -647,7 +640,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #fed136;
+    border-color: lightblu;
     box-shadow: none
 }
 
@@ -817,7 +810,7 @@ ul.social-buttons li a:hover {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fed136
+    background: lightblue
 }
 
 ::selection {
